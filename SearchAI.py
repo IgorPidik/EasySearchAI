@@ -79,8 +79,8 @@ class DFS(object):
                     newCost = 0 #cost is irrelevant for DFS
                     states.append((newState, newActions, newCost))
 
-        return []
         raise ValueError("failure")
+        return []
 
 
 class BFS(object):
@@ -118,9 +118,9 @@ class BFS(object):
                     newActions = actions + [action]
                     newCost = self.problem.heuristic(newState) + self.problem.getActionCost(action)
                     states.append((newState, newActions, newCost))
-
-        return []
+        
         raise ValueError("failure")
+        return []
 
 
 class UCS(object):

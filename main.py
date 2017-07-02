@@ -48,8 +48,8 @@ class HelloProlem(SearchProblem):
 
 def main():
     problem = HelloProlem(list("HELLO"))
-    astar = DFS(problem)
-    astar.getPlan(([], [], 0))
+    dfs = DFS(problem)
+    dfs.getPlan(([], [], 0))
 
 
 
